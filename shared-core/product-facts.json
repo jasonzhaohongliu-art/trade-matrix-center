@@ -1,0 +1,208 @@
+{
+  "description": "核心材质参数库 — 2026最新工艺指标、牌号公差与六大品类物理参数",
+  "version": "2.0.0",
+  "categories": {
+    "Nickel_Mesh": {
+      "family": "纯镍/镍合金网",
+      "grades": {
+        "N4_Ni202": {
+          "nickelPurity": "≥ 99.8%",
+          "conductivity": "18% IACS",
+          "tensileStrength": "≥ 345 MPa",
+          "maxTemp": "600°C"
+        },
+        "N6_Ni200": {
+          "nickelPurity": "≥ 99.5%",
+          "conductivity": "14% IACS",
+          "tensileStrength": "≥ 380 MPa",
+          "maxTemp": "650°C"
+        },
+        "N8_Ni201": {
+          "nickelPurity": "≥ 99.0%",
+          "carbonContent": "≤ 0.02%",
+          "tensileStrength": "≥ 350 MPa",
+          "maxTemp": "650°C"
+        }
+      },
+      "meshSpecs": {
+        "apertureRange": "10-400 mesh (2000μm - 38μm)",
+        "tolerance": "± 5μm for ≤ 100 mesh, ± 2μm for > 100 mesh",
+        "wireDiameter": "0.025mm - 1.2mm",
+        "weaveType": ["平纹", "斜纹", "荷兰编织"],
+        "raneyNickelCoating": "Ni-Al alloy activated, BET surface ≥ 80 m²/g"
+      }
+    },
+    "Inconel_718_Bolts": {
+      "family": "镍基高温合金紧固件",
+      "grades": {
+        "Alloy_718_GH4169": {
+          "unsNumber": "N07718",
+          "tensileStrength": "≥ 1240 MPa",
+          "yieldStrength": "≥ 1034 MPa",
+          "elongation": "≥ 12%",
+          "hardness": "≥ 36 HRC",
+          "maxServiceTemp": "704°C",
+          "heatTreatment": "Solution 980°C + Age 720°C/8h + 620°C/8h"
+        },
+        "A286_GH2132": {
+          "unsNumber": "S66286",
+          "tensileStrength": "≥ 896 MPa",
+          "yieldStrength": "≥ 586 MPa",
+          "maxServiceTemp": "650°C",
+          "heatTreatment": "Solution 900°C + Age 720°C/16h"
+        },
+        "Nimonic_80A": {
+          "unsNumber": "N07080",
+          "tensileStrength": "≥ 1000 MPa",
+          "yieldStrength": "≥ 620 MPa",
+          "maxServiceTemp": "815°C",
+          "creepRuptureLife": "≥ 100h at 750°C / 310 MPa"
+        },
+        "Nimonic_90": {
+          "unsNumber": "N07090",
+          "tensileStrength": "≥ 1100 MPa",
+          "yieldStrength": "≥ 750 MPa",
+          "maxServiceTemp": "920°C"
+        },
+        "Monel_K500": {
+          "unsNumber": "N05500",
+          "tensileStrength": "≥ 965 MPa",
+          "yieldStrength": "≥ 690 MPa",
+          "maxServiceTemp": "260°C",
+          "corrosionResistance": "Excellent in H₂S / sour service"
+        }
+      },
+      "threadSpecs": {
+        "metricRange": "M6 - M64",
+        "imperialRange": "1/4\" - 2-1/2\" UNC/UNF",
+        "toleranceClass": "6g / 6H (Metric), Class 2A/2B (Imperial)",
+        "coatingOptions": ["Silver Plating", "MoS₂ Dry Film", "Boron Nitride Ceramic Coat"]
+      }
+    },
+    "Copper_Clad_Steel": {
+      "family": "铜包钢双金属复合材料",
+      "grades": {
+        "CCS_21_IACS": {
+          "conductivity": "21% IACS",
+          "copperVolumeRatio": "≥ 25%",
+          "tensileStrength_annealed": "≥ 400 MPa",
+          "tensileStrength_hardDrawn": "800-1200 MPa",
+          "claddingThickness": "≥ 0.25 mm",
+          "baseSteelStandard": "SWRCH6A / JIS G3507"
+        },
+        "CCS_30_IACS": {
+          "conductivity": "30% IACS",
+          "copperVolumeRatio": "≥ 37%",
+          "tensileStrength_annealed": "≥ 380 MPa",
+          "tensileStrength_hardDrawn": "700-1100 MPa",
+          "claddingThickness": "≥ 0.30 mm"
+        },
+        "CCS_40_IACS": {
+          "conductivity": "40% IACS",
+          "copperVolumeRatio": "≥ 50%",
+          "tensileStrength_annealed": "≥ 350 MPa",
+          "tensileStrength_hardDrawn": "600-900 MPa",
+          "claddingThickness": "≥ 0.40 mm"
+        }
+      },
+      "tolerances": {
+        "concentricity": "≥ 95% (Cu layer deviation ≤ 5%)",
+        "diameterTolerance": "± 0.02 mm for Ø ≤ 2.0 mm, ± 0.03 mm for Ø > 2.0 mm",
+        "bondStrength": "≥ 137 MPa (ASTM B452 shear test)"
+      }
+    },
+    "NDT_Equipment": {
+      "family": "无损检测设备与探头系统",
+      "techniques": {
+        "PAUT": {
+          "fullName": "Phased Array Ultrasonic Testing",
+          "channelConfigs": ["16:64", "32:128", "64:128"],
+          "frequencyRange": "0.5 - 20 MHz",
+          "samplingRate": "100 MHz / 12-bit",
+          "gainRange": "0 - 80 dB",
+          "compliance": "EN ISO 18563, ASME Sec V Art.4"
+        },
+        "TOFD": {
+          "fullName": "Time-of-Flight Diffraction",
+          "frequencyRange": "2 - 15 MHz",
+          "probeAngle": "45°, 60°, 70°",
+          "blindZoneReduction": "≤ 1 mm with dual-probe configuration",
+          "compliance": "EN ISO 10863, ASME Sec V Art.4"
+        },
+        "Eddy_Current": {
+          "fullName": "Eddy Current Testing",
+          "frequencyRange": "50 Hz - 10 MHz",
+          "probeTypes": ["Absolute", "Differential", "Reflection"],
+          "compliance": "EN ISO 15549, ASTM E426"
+        }
+      }
+    },
+    "Heating_Wire": {
+      "family": "电阻加热合金线",
+      "grades": {
+        "FeCrAl_0Cr21Al6Nb": {
+          "maxTemp": "1200°C",
+          "resistivity_20C": "1.45 ± 0.05 μΩ·m",
+          "tensileStrength": "≥ 637 MPa",
+          "elongation": "≥ 15%",
+          "surfaceLoadMax": "1.8 W/cm² at 1200°C",
+          "oxideLayer": "Al₂O₃ protective, self-regenerating"
+        },
+        "FeCrAl_Kanthal_A1": {
+          "maxTemp": "1425°C",
+          "resistivity_20C": "1.45 ± 0.05 μΩ·m",
+          "tensileStrength": "≥ 680 MPa",
+          "surfaceLoadMax": "2.0 W/cm² at 1400°C"
+        },
+        "NiCr_Cr20Ni80": {
+          "maxTemp": "1050°C",
+          "resistivity_20C": "1.09 ± 0.05 μΩ·m",
+          "tensileStrength": "≥ 650 MPa",
+          "elongation": "≥ 20%",
+          "surfaceLoadMax": "1.5 W/cm² at 1050°C",
+          "hazardNote": "Sulfur attack → Ni₃S₂ low-melting eutectic at 645°C"
+        }
+      },
+      "tolerances": {
+        "diameterRange": "0.018 mm - 10.0 mm",
+        "diameterTolerance": "± 0.003 mm for Ø ≤ 0.1 mm, ± 0.01 mm for Ø ≤ 1.0 mm, ± 0.03 mm for Ø > 1.0 mm",
+        "resistivityTolerance": "± 5% at 20°C",
+        "lifeTest": "Quick-life test at 1200°C (FeCrAl) / 1050°C (NiCr), ≥ 100 cycles"
+      }
+    },
+    "Thermocouple_Alloy_Wire": {
+      "family": "热电偶合金补偿导线",
+      "grades": {
+        "Type_K_Chromel_Alumel": {
+          "positiveLeg": "KP: Ni-Cr (Chromel), ~90% Ni + 10% Cr",
+          "negativeLeg": "KN: Ni-Al-Mn-Si (Alumel), ~95% Ni",
+          "emfRange": "-200°C to +1260°C",
+          "tolerance_Class1": "± 1.5°C or ± 0.004·|t| (whichever greater)",
+          "tolerance_Special": "± 0.6°C or ± 0.002·|t|",
+          "driftRate": "≤ 0.5°C per 100h at 1000°C",
+          "greenRotRisk": "200°C - 500°C in reducing / low-O₂ atmosphere"
+        },
+        "Type_S_Pt_Rh": {
+          "positiveLeg": "SP: Pt-10%Rh",
+          "negativeLeg": "SN: Pure Pt (≥ 99.999%)",
+          "emfRange": "-50°C to +1768°C",
+          "tolerance_Class1": "± 1.0°C or ± 0.004·|t|",
+          "tolerance_Special": "± 0.5°C or ± 0.002·|t|"
+        },
+        "Type_J_Iron_Constantan": {
+          "positiveLeg": "JP: Pure Fe (≥ 99.5%)",
+          "negativeLeg": "JN: Cu-Ni (Constantan), ~55% Cu + 45% Ni",
+          "emfRange": "-210°C to +1200°C",
+          "tolerance_Class1": "± 1.5°C or ± 0.004·|t|",
+          "oxidationLimit": "≥ 500°C rapid Fe oxidation"
+        }
+      },
+      "tolerances": {
+        "wireDiameter": "0.025 mm - 3.2 mm",
+        "diameterTolerance": "± 0.003 mm for Ø ≤ 0.5 mm, ± 0.01 mm for Ø ≤ 1.5 mm, ± 0.02 mm for Ø > 1.5 mm",
+        "pairingAccuracy": "EMF matched within ± 0.3°C per batch",
+        "insulationOptions": ["MgO mineral insulated", "PTFE/FEP", "Fiberglass braid", "Ceramic fiber sleeve"]
+      }
+    }
+  }
+}

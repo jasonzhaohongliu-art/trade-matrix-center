@@ -1,0 +1,13 @@
+{
+  "name": "site-02-ccs",
+  "version": "1.0.0",
+  "description": "2号铜包钢+NDT站 — CCS & NDT Solutions",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: your-github-username/site-01-inconel-repo  # 替换为你独立站的GitHub私有库名称
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "📦 1号站·全球多语种蓄水池"
+    folder: "src/pages"
+    extension: "md"
+    format: "frontmatter"
+    create: true
+    slug: "{{fields.slug}}"
+    fields:
+      - { label: "网页物理路径Slug (如: inconel-718-bolt)", name: "slug", widget: "string" }
+      - { label: "页面显示标题 (Title)", name: "title", widget: "string" }
+      - { label: "🌐 页面语种", name: "lang", widget: "select", options: ["en", "de", "ja"], default: "en" }
+      - { label: "主攻长尾词 (对应语种)", name: "seo_keyword", widget: "string" }
+      - { label: "💡 蓄水池阀门 (True为草稿拦截，False为释放发布)", name: "draft", widget: "boolean", default: true }
+      - { label: "文章内容 (核对材质参数即可)", name: "body", widget: "markdown" }

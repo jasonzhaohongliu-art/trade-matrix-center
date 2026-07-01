@@ -1,0 +1,129 @@
+---
+// 🎛️ 动态 hreflang 国际化主模具 — 1号超级合金站
+// 已融合工业B2B刚性军规：动态hreflang路由、Organization Schema实体验证、强意图CRO转化炸弹
+
+export interface Props {
+  title: string;
+  description: string;
+  locale: 'en' | 'de' | 'ja';
+  canonicalPath: string;
+  structuredData?: object;
+}
+
+const { title, description, locale, canonicalPath, structuredData } = Astro.props;
+const DOMAIN = 'https://inconel-alloy.com'; // 完美保留原有site-01域名
+
+const altLocales = {
+  en: { hreflang: 'en', label: 'English', path: '' },
+  de: { hreflang: 'de', label: 'Deutsch', path: '/de' },
+  ja: { hreflang: 'ja', label: '日本語', path: '/ja' },
+};
+
+// 刚性军规：默认合并全局品牌实体 Organization Schema，防止大模型引用孤立资产
+const defaultOrganizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Roalloy Precision Metals",
+  "url": DOMAIN,
+  "logo": `${DOMAIN}/assets/logo.png`,
+  "description": "Professional OEM manufacturer of high-end superalloys with advanced ISO certifications.",
+  "sameAs": [
+    "https://www.linkedin.com/company/roalloy-official",
+    "https://www.reddit.com/user/roalloy-official"
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html lang={locale} dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} - Roalloy Matrix</title>
+    <meta name="description" content={description} />
+
+    {Object.entries(altLocales).map(([key, { hreflang, path: locPath }]) => (
+      <link rel="alternate" hreflang={hreflang} href={`${DOMAIN}${locPath}${canonicalPath}`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={`${DOMAIN}${canonicalPath}`} />
+    <link rel="canonical" href={`${DOMAIN}${altLocales[locale].path}${canonicalPath}`} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(defaultOrganizationSchema)} />
+    {structuredData && (
+      <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    )}
+
+    <style is:global>
+      .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        margin: 1.5rem 0;
+        -webkit-overflow-scrolling: touch;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.95rem;
+      }
+      th {
+        background-color: #f8fafc;
+        color: #0f172a;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        border-bottom: 2px solid #e2e8f0;
+      }
+      td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #edf2f7;
+        color: #334155;
+      }
+      strong {
+        color: #0f172a;
+        font-weight: 700;
+      }
+      .prose blockquote {
+        border-left: 4px solid #3b82f6;
+        background-color: #eff6ff;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border-radius: 0 0.5rem 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased font-sans m-0 p-0">
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+      <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="text-xl font-bold text-slate-900 no-underline">Inconel Alloy</a>
+        <nav class="flex gap-4">
+          <a href="/" class="text-sm font-medium text-slate-600 hover:text-blue-600 no-underline">English</a>
+          <a href="/de/" class="text-sm font-medium text-slate-600 hover:text-blue-600 no-underline">Deutsch</a>
+          <a href="/ja/" class="text-sm font-medium text-slate-600 hover:text-blue-600 no-underline">日本語</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 bg-white border border-slate-200 rounded-xl my-8 shadow-sm prose">
+      
+      <slot />
+
+      <div class="mt-12 p-6 border-2 border-dashed border-blue-200 bg-blue-50/50 rounded-xl">
+        <h3 class="text-xl font-bold text-blue-900 m-0">🚨 Experiencing Unexpected Mechanical Failure, Creep Rupture, or EMF Drift?</h3>
+        <p class="text-sm text-slate-600 my-2">Upload your broken element micro-graph or operational data. Our 15-year metallurgical engineers will analyze the root cause for free within 12 hours.</p>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <input type="email" placeholder="Professional Business Email" class="px-3 py-2 border border-slate-300 rounded bg-white text-base focus:outline-none focus:border-blue-500" required />
+          <input type="text" placeholder="Company Name & Target Specs" class="px-3 py-2 border border-slate-300 rounded bg-white text-base focus:outline-none focus:border-blue-500" required />
+          <textarea placeholder="Detail your operational parameters (Temperature, Stress, Service Environment) for instant engineering analysis..." class="px-3 py-2 border border-slate-300 rounded bg-white text-base focus:outline-none focus:border-blue-500 md:col-span-2 h-24" required></textarea>
+          <button type="submit" class="bg-blue-600 text-white font-semibold py-2.5 px-6 rounded hover:bg-blue-700 transition-colors md:col-span-2 cursor-pointer border-none text-base">Apply for Free Metallurgical Diagnostic Report</button>
+        </form>
+      </div>
+
+    </main>
+
+    <footer class="bg-slate-100 border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+      <div class="max-w-4xl mx-auto px-4">
+        <p>&copy; {new Date().getFullYear()} Inconel Alloy Trading. All metallurgical parameters verified by Roalloy Laboratory.</p>
+      </div>
+    </footer>
+  </body>
+</html>

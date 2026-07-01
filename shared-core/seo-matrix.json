@@ -1,0 +1,34 @@
+{
+  "description": "矩阵总控制表 — 配置域名、多语种路由策略与六大品类产品线映射",
+  "version": "2.0.0",
+  "sites": [
+    {
+      "id": "site-01",
+      "slug": "inconel",
+      "domain": "inconel-alloy.com",
+      "locales": ["en", "de", "ja"],
+      "defaultLocale": "en",
+      "hreflang": true,
+      "product_lines": [
+        "Nickel_Mesh",
+        "Inconel_718_Bolts",
+        "Heating_Wire",
+        "Thermocouple_Alloy_Wire"
+      ],
+      "seo_strategy": "GEO"
+    },
+    {
+      "id": "site-02",
+      "slug": "ccs",
+      "domain": "copper-clad-steel.com",
+      "locales": ["en", "de", "ja"],
+      "defaultLocale": "en",
+      "hreflang": true,
+      "product_lines": [
+        "Copper_Clad_Steel",
+        "NDT_Equipment"
+      ],
+      "seo_strategy": "SEO"
+    }
+  ]
+}

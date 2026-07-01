@@ -1,0 +1,41 @@
+# 📦 后台表单与多语种字段映射配置 — CCS 铜包钢站点
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "页面管理"
+    folder: "src/pages"
+    create: true
+    fields:
+      - { label: "标题 (EN)", name: "title_en", widget: "string", required: true }
+      - { label: "标题 (DE)", name: "title_de", widget: "string" }
+      - { label: "标题 (JA)", name: "title_ja", widget: "string" }
+      - { label: "描述 (EN)", name: "description_en", widget: "text" }
+      - { label: "描述 (DE)", name: "description_de", widget: "text" }
+      - { label: "描述 (JA)", name: "description_ja", widget: "text" }
+      - { label: "GEO 关键词", name: "geo_keywords", widget: "list", summary: "{{fields.keyword}}" }
+      - { label: "导电率牌号", name: "conductivity_grade", widget: "select", multiple: true, options: ["CCS 40%", "CCS 55%", "CCS 70%"] }
+      - { label: "正文内容", name: "body", widget: "markdown" }
+
+  - name: "products"
+    label: "产品库"
+    folder: "src/data/products"
+    create: true
+    fields:
+      - { label: "产品名称", name: "title", widget: "string" }
+      - { label: "导电率", name: "conductivity", widget: "select", options: ["40% IACS", "55% IACS", "70% IACS"] }
+      - { label: "规格", name: "specification", widget: "string" }
+      - { label: "覆层厚度 (mm)", name: "cladding_thickness", widget: "number", value_type: "float" }
+      - { label: "价格 (USD/m)", name: "price", widget: "number", value_type: "float" }
+      - { label: "库存状态", name: "stock", widget: "select", options: ["现货", "期货", "定制"] }
+      - { label: "产品图片", name: "image", widget: "image" }
+
+i18n:
+  default_locale: en
+  locales: [en, de, ja]
+  structure: multiple_folders

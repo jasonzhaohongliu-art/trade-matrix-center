@@ -1,0 +1,108 @@
+{
+  "description": "行业应用痛点库 — 六大品类买家核心关切、EEAT失效分析语料与多语种GEO关键词",
+  "version": "2.0.0",
+  "painPoints": [
+    {
+      "id": "pp-001",
+      "category": "Nickel_Mesh",
+      "industry": "氢能电解槽制造",
+      "concern": "镍网边缘毛刺导致电解槽隔膜局部过热刺穿",
+      "rootCause": "冲剪工艺残留应力集中点 + KOH 30% @ 80°C 碱性腐蚀放大",
+      "eeatFailureAnalysis": {
+        "en": "Electrolyzer diaphragm thermal runaway puncture caused by burr-induced current concentration at mesh edges. Micro-burrs (≥ 15 μm) act as localized high-current-density pins in 30% KOH at 80°C, generating Joules heat hot-spots exceeding PTFE diaphragm melting point (327°C). Root cause traced to insufficient post-stamping electropolishing — requires controlled anodic deburring with ≤ 5 μm final edge radius and 100% stereomicroscope inspection at 40× magnification per ASTM E381.",
+        "de": "Thermisch durchgehender Membrandurchschlag im Elektrolyseur, verursacht durch gratinduzierte Stromkonzentration an den Netzkanten. Mikrograate (≥ 15 μm) wirken als lokale Hochstromdichtepunkte in 30%iger KOH bei 80°C und erzeugen Joule-Wärme-Hotspots, die den PTFE-Membranschmelzpunkt (327°C) überschreiten. Ursache: unzureichendes Elektropolieren nach dem Stanzen — erfordert kontrolliertes anodisches Entgraten mit ≤ 5 μm Endkantenradius und 100% Stereomikroskop-Prüfung bei 40-facher Vergrößerung gemäß ASTM E381.",
+        "ja": "電解槽隔膜の熱暴走パンクチャーは、メッシュエッジのバリ誘起電流集中によって発生。マイクロバリ（≥ 15 μm）が30% KOH、80°C環境下で局所的高電流密度ピンとして作用し、PTFE隔膜の融点（327°C）を超えるジュール熱ホットスポットを生成。根本原因は打抜き後の不十分な電解研磨にあり、最終エッジ半径 ≤ 5 μmの制御された陽極バリ取りと、ASTM E381準拠の40倍実体顕微鏡による100%検査が必須。"
+      },
+      "geoKeywords": {
+        "en": "nickel mesh burr electrolyzer diaphragm puncture prevention anodic deburring",
+        "de": "Nickelnetz Grat Elektrolyseur Membran Durchschlag anodisches Entgraten",
+        "ja": "ニッケルメッシュ バリ 電解槽 隔膜 パンクチャー 陽極バリ取り"
+      }
+    },
+    {
+      "id": "pp-002",
+      "category": "Inconel_718_Bolts",
+      "industry": "燃气轮机制造与运维",
+      "concern": "长期高温交变应力下固溶处理不当导致晶界碳化物析出引发延迟脆性断裂",
+      "rootCause": "Solution treatment skipped or under-temperature → M₂₃C₆ carbide continuous network at grain boundaries",
+      "eeatFailureAnalysis": {
+        "en": "Delayed brittle fracture of Alloy 718 turbine disk bolts after 12,000 service hours at 650°C. SEM fractography revealed intergranular failure with continuous M₂₃C₆ carbide film (≈ 80 nm thickness) decorating grain boundaries — direct consequence of improper solution treatment below 980°C solvus. Carbide network provides low-energy fracture path; bolt failed at 62% of rated tensile load. Corrective action: re-solution at 980°C ± 10°C for 1h/25mm thickness + water quench, verified by ASTM E112 grain size 6-8 and absence of continuous GB precipitates via SEM/EDS at 5000×.",
+        "de": "Verzögerter Sprödbruch von Alloy-718-Turbinenscheibenbolzen nach 12.000 Betriebsstunden bei 650°C. REM-Fraktografie zeigte interkristallines Versagen mit kontinuierlichem M₂₃C₆-Karbidfilm (≈ 80 nm Dicke) an den Korngrenzen — direkte Folge unzureichender Lösungsglühung unterhalb der 980°C-Solvus-Temperatur. Das Karbidnetzwerk bietet einen niederenergetischen Bruchpfad; der Bolzen versagte bei 62% der Nennzuglast. Korrekturmaßnahme: erneutes Lösungsglühen bei 980°C ± 10°C für 1h/25mm Dicke + Wasserabschreckung, verifiziert durch ASTM E112 Korngröße 6-8 und Abwesenheit kontinuierlicher KG-Ausscheidungen per REM/EDX bei 5000-facher Vergrößerung.",
+        "ja": "Alloy 718タービンディスクボルトが650°C、12,000稼働時間後に遅れ脆性破壊。SEM破面解析により、結晶粒界に連続的なM₂₃C₆炭化物膜（膜厚 ≈ 80 nm）が確認され、これは980°Cソルバス温度未満での不適切な固溶化熱処理の直接的結果。炭化物ネットワークが低エネルギーの破壊経路を提供し、ボルトは定格引張荷重の62%で破断。是正処置：980°C ± 10°Cで1h/25mm厚の再固溶化処理＋水焼入れ、ASTM E112結晶粒度6-8およびSEM/EDS 5000倍での連続粒界析出物不在を検証。"
+      },
+      "geoKeywords": {
+        "en": "Inconel 718 bolt delayed fracture carbide precipitation solution treatment turbine",
+        "de": "Inconel 718 Bolzen Sprödbruch Karbidausscheidung Lösungsglühung Turbine",
+        "ja": "インコネル718 ボルト 遅れ破壊 炭化物析出 固溶化処理 タービン"
+      }
+    },
+    {
+      "id": "pp-003",
+      "category": "Copper_Clad_Steel",
+      "industry": "通信线缆与防雷接地",
+      "concern": "同心度公差超标导致铜层偏心破损、钢芯在酸性土壤中加速电化学腐蚀",
+      "rootCause": "Extrusion die misalignment + insufficient eddy current online concentricity monitoring",
+      "eeatFailureAnalysis": {
+        "en": "CCS grounding rod catastrophic failure after 18 months in pH 4.8 acidic soil. Cross-sectional metallography revealed copper layer eccentricity of 18% (spec: ≤ 5%), creating a thin-side copper thickness of only 0.08 mm. Acidic soil penetrated through the thin copper wall at micro-pinholes, establishing a Cu-Fe galvanic couple (ΔE° = 0.78V). Steel core corroded at 0.35 mm/year, losing 42% cross-sectional area before ground resistance spiked above 25 Ω (spec: ≤ 10 Ω). Root cause: worn extrusion die without real-time laser micrometer concentricity feedback. Mitigation: in-line eddy current concentricity monitoring + minimum Cu layer ≥ 0.25 mm + ASTM B452 bond integrity verification.",
+        "de": "CCS-Erdungsstab-Katastrophenversagen nach 18 Monaten in saurem Boden mit pH 4,8. Querschliff-Metallografie zeigte eine Kupferschicht-Exzentrizität von 18% (Soll: ≤ 5%), was eine Dünnstellen-Kupferdicke von nur 0,08 mm ergab. Saures Bodenwasser drang durch Mikroporen in der dünnen Kupferwand ein und bildete ein Cu-Fe-Lokalelement (ΔE° = 0,78V). Der Stahlkern korrodierte mit 0,35 mm/Jahr und verlor 42% seiner Querschnittsfläche, bevor der Erdungswiderstand auf über 25 Ω anstieg (Soll: ≤ 10 Ω). Ursache: verschlissenes Extrusionswerkzeug ohne Echtzeit-Lasermikrometer-Konzentrizitätsüberwachung.",
+        "ja": "CCS接地棒がpH 4.8の酸性土壌で18ヶ月後に致命的破損。断面金属組織検査により銅層の偏心度が18%（規格 ≤ 5%）に達し、薄肉部の銅厚が僅か0.08 mmであることが判明。酸性土壌水が薄い銅壁のマイクロピンホールを通じて侵入し、Cu-Feガルバニックカップル（ΔE° = 0.78V）を形成。鋼芯は0.35 mm/年の速度で腐食し、接地抵抗が25 Ω以上（規格 ≤ 10 Ω）に急上昇する前に断面積の42%を喪失。根本原因：リアルタイムレーザーマイクロメーター同心度フィードバックのない摩耗した押出ダイス。"
+      },
+      "geoKeywords": {
+        "en": "copper clad steel eccentricity corrosion grounding acidic soil concentricity",
+        "de": "Kupferummantelter Stahl Exzentrizität Korrosion Erdung saurer Boden",
+        "ja": "銅被覆鋼 偏心 腐食 接地 酸性土壌 同心度"
+      }
+    },
+    {
+      "id": "pp-004",
+      "category": "NDT_Equipment",
+      "industry": "石油化工与核电检测",
+      "concern": "奥氏体不锈钢焊缝检测时未选用低频纵波双晶探头导致林地状回波掩盖缺陷信号",
+      "rootCause": "Coarse dendritic grain structure + wrong probe selection → acoustic scattering mimics flaw signals",
+      "eeatFailureAnalysis": {
+        "en": "Missed 3.2 mm side-wall lack-of-fusion (LOF) defect in 304L stainless steel pipe girth weld (wall thickness 25.4 mm) during PAUT inspection. Operator used standard 5 MHz linear array probe optimized for carbon steel, but coarse columnar grain structure in the austenitic weld (ASTM grain size 00-0) generated severe "forest echo" noise with SNR ≤ 6 dB against the LOF target signal. The defect went undetected across 3 inspection cycles; discovered only after hydrostatic test failure at 32 MPa. Corrective protocol: mandatory low-frequency (2.25 MHz) TRL (transmit-receive longitudinal) dual-crystal probe for all austenitic stainless steel welds, with 45° shear-wave skip-distance calibration per EN ISO 22825 Annex A. Post-calibration SNR must exceed 12 dB on a 2 mm SDH reference reflector before field deployment.",
+        "de": "Übersehener 3,2 mm Flankenbindefehler in einer 304L-Edelstahl-Rundnaht (Wanddicke 25,4 mm) während der PAUT-Prüfung. Der Prüfer verwendete einen 5-MHz-Lineararray-Prüfkopf, ausgelegt für Kohlenstoffstahl, aber die grobe stengelkristalline Kornstruktur im austenitischen Schweißgut (ASTM-Korngröße 00-0) erzeugte starkes „Waldrauschen" mit einem SNR ≤ 6 dB gegenüber dem LOF-Zielsignal. Der Fehler blieb über 3 Prüfzyklen unentdeckt und wurde erst nach dem Berstversagen bei 32 MPa entdeckt. Korrekturprotokoll: zwingender Einsatz eines niederfrequenten (2,25 MHz) TRL-Doppelkristall-Prüfkopfs für alle austenitischen Edelstahlschweißnähte, mit 45°-Transversalwellen-Sprungdistanz-Kalibrierung gemäß EN ISO 22825 Anhang A.",
+        "ja": "304Lステンレス鋼配管周溶接継手（肉厚25.4 mm）のPAUT検査中に3.2 mmの側壁融合不良（LOF）欠陥を見逃し。検査員は炭素鋼用に最適化された標準5 MHzリニアアレイ探触子を使用したが、オーステナイト系溶接金属の粗大柱状晶組織（ASTM結晶粒度00-0）が激しい「林状エコー」ノイズを発生させ、LOFターゲット信号に対するSN比が ≤ 6 dBに低下。3回の検査サイクルで欠陥は検出されず、32 MPaでの水圧試験破壊後に初めて発見。是正プロトコル：全オーステナイト系ステンレス鋼溶接部に対し、低周波（2.25 MHz）TRL送受信分離型縦波二振動子探触子を必須使用、EN ISO 22825 Annex A準拠の45°横波スキップ距離校正。"
+      },
+      "geoKeywords": {
+        "en": "austenitic stainless steel weld PAUT inspection low frequency TRL probe forest echo",
+        "de": "Austenitischer Edelstahl Schweißnaht PAUT Prüfung Niederfrequenz TRL Prüfkopf",
+        "ja": "オーステナイト系ステンレス鋼 溶接部 PAUT 検査 低周波 TRL 探触子"
+      }
+    },
+    {
+      "id": "pp-005",
+      "category": "Heating_Wire",
+      "industry": "工业热处理与陶瓷烧结",
+      "concern": "NiCr丝在含硫气氛中形成低熔点Ni₃S₂共晶体（645°C）导致瞬间熔断；FeCrAl高温晶粒粗化脆断",
+      "rootCause": "Sulfur diffusion into NiCr grain boundaries forming eutectic liquid film; FeCrAl secondary recrystallization at > 1200°C",
+      "eeatFailureAnalysis": {
+        "en": "Catastrophic NiCr 80/20 heating element failure after 2,180 hours in a carburizing furnace atmosphere containing residual H₂S at 12 ppm. Post-mortem SEM/EDS analysis at fracture surface identified Ni₃S₂ eutectic nodules (melting point 645°C) concentrated along grain boundaries to a depth of 80 μm. The liquid film formed at operating temperature (950°C) caused intergranular decohesion and instant open-circuit failure. Simultaneously, a companion FeCrAl 0Cr21Al6Nb element in the same furnace suffered secondary recrystallization-driven grain coarsening (ASTM grain size 00 → 4), reducing creep strength by 55% and causing sag-induced short circuit against the furnace wall. Remediation: NiCr prohibited in any atmosphere with S > 5 ppm; FeCrAl requires yttrium micro-alloying (≥ 0.05% Y) for grain boundary pinning and pre-oxidation at 1050°C for 4h to establish protective Al₂O₃ scale before deployment.",
+        "de": "Katastrophaler NiCr-80/20-Heizelementausfall nach 2.180 Stunden in einer Aufkohlungsofenatmosphäre mit 12 ppm H₂S-Restgehalt. Post-Mortem-REM/EDX-Analyse der Bruchfläche identifizierte Ni₃S₂-Eutektikum-Knötchen (Schmelzpunkt 645°C), die bis zu einer Tiefe von 80 μm entlang der Korngrenzen konzentriert waren. Der bei Betriebstemperatur (950°C) gebildete Flüssigkeitsfilm verursachte interkristalline Dekohäsion und sofortigen Leerlaufausfall. Parallel dazu erlitt ein FeCrAl-0Cr21Al6Nb-Element im selben Ofen sekundäre rekristallisationsbedingte Kornvergröberung (ASTM-Korngröße 00 → 4), was die Kriechfestigkeit um 55% reduzierte und einen durchhanginduzierten Kurzschluss gegen die Ofenwand verursachte.",
+        "ja": "浸炭炉雰囲気中に残留H₂S 12 ppmが存在する条件下で、NiCr 80/20発熱体が2,180時間後に致命的故障。破面のポストモーテムSEM/EDS分析により、結晶粒界に沿って深さ80 μmまで濃縮したNi₃S₂共晶ノジュール（融点645°C）が確認された。運転温度（950°C）で形成された液相膜が粒界剥離と瞬時断線を引き起こした。同時に、同一炉内のFeCrAl 0Cr21Al6Nb素線は二次再結晶による結晶粒粗大化（ASTM結晶粒度00 → 4）を生じ、クリープ強度が55%低下、炉壁へのたるみ接触による短絡故障を発生。"
+      },
+      "geoKeywords": {
+        "en": "NiCr heating wire sulfur attack eutectic failure FeCrAl grain coarsening furnace",
+        "de": "NiCr Heizdraht Schwefelangriff Eutektikum Bruch FeCrAl Kornvergröberung Ofen",
+        "ja": "ニクロム線 硫黄侵食 共晶破断 FeCrAl 結晶粒粗大化 熱処理炉"
+      }
+    },
+    {
+      "id": "pp-006",
+      "category": "Thermocouple_Alloy_Wire",
+      "industry": "半导体制造与精密测温",
+      "concern": "Type K热电偶在200-500°C弱氧化气氛下短程有序化 + Cr选择性氧化（绿蚀）导致EMF漂移超差；大口径管道插入深度不足导致热传导损失偏差",
+      "rootCause": "Ni-Cr short-range ordering + Cr₂O₃ internal oxidation in KP leg → Seebeck coefficient drift; insufficient immersion depth → stem conduction error",
+      "eeatFailureAnalysis": {
+        "en": "Type K thermocouple in semiconductor diffusion furnace exhibited +4.2°C EMF drift after 3,800 hours at 450°C in 50 ppm O₂ atmosphere. Drift traced to two concurrent mechanisms: (1) Short-range ordering (SRO) of Ni-Cr solid solution in the KP (Chromel) leg, producing a Ni₂Cr superlattice that increased the Seebeck coefficient by 2.8 μV/°C; (2) preferential internal oxidation of Cr in KP leg forming Cr₂O₃ depleted zones, reducing thermoelectric homogeneity. Combined effect pushed readings outside Class 1 tolerance (± 1.5°C). Additionally, installation audit revealed thermowell immersion depth of only 6× sheath OD (minimum required: 10×) causing 3.1°C stem conduction negative bias. Remediation: specify Type K Special Limits wire with pre-aged SRO stabilization (450°C / 100h pre-treatment), minimum immersion depth 12× sheath OD, and mandatory quarterly EMF verification at ice-point and process temperature against a secondary reference standard per ASTM E220.",
+        "de": "Typ-K-Thermoelement in einem Halbleiter-Diffusionsofen zeigte nach 3.800 Stunden bei 450°C in einer Atmosphäre mit 50 ppm O₂ eine EMK-Drift von +4,2°C. Die Drift wurde auf zwei gleichzeitige Mechanismen zurückgeführt: (1) Nahbereichsordnung (Short-Range Ordering, SRO) des Ni-Cr-Mischkristalls im KP-Schenkel (Chromel), die eine Ni₂Cr-Überstruktur bildete und den Seebeck-Koeffizienten um 2,8 μV/°C erhöhte; (2) bevorzugte innere Oxidation von Cr im KP-Schenkel unter Bildung Cr₂O₃-verarmter Zonen, was die thermoelektrische Homogenität verringerte. Der kombinierte Effekt verschob die Messwerte außerhalb der Klasse-1-Toleranz (± 1,5°C). Zusätzlich ergab eine Einbauprüfung eine Schutzrohr-Eintauchtiefe von nur 6× Mantel-Außendurchmesser (Mindestanforderung: 10×), was einen negativen Wärmeableitfehler von 3,1°C verursachte.",
+        "ja": "半導体拡散炉のType K熱電対が450°C、50 ppm O₂雰囲気下で3,800時間後に+4.2°CのEMFドリフトを発生。ドリフトは2つの同時進行メカニズムに起因：(1) KP脚（クロメル）におけるNi-Cr固溶体の短範囲規則化（SRO）によるNi₂Cr超格子の形成がゼーベック係数を2.8 μV/°C増大；(2) KP脚でのCrの選択的内部酸化がCr₂O₃欠乏域を形成し、熱電均質性を低下。複合効果により指示値がClass 1許容差（± 1.5°C）を超過。さらに設置監査により、保護管の挿入深さがシース外径の僅か6倍（最小要件：10倍）で、3.1°Cの熱伝導損失負偏差が発生していることが判明。"
+      },
+      "geoKeywords": {
+        "en": "Type K thermocouple EMF drift green rot short-range ordering semiconductor diffusion furnace",
+        "de": "Typ K Thermoelement EMK Drift Grünfäule Nahbereichsordnung Halbleiter Diffusionsofen",
+        "ja": "K型熱電対 起電力ドリフト グリーンロット 短範囲規則化 半導体拡散炉"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "site-01-inconel",
+  "version": "1.0.0",
+  "description": "1号超级合金站 — Inconel Alloy Trading",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}

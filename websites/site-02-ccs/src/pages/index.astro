@@ -1,0 +1,30 @@
+---
+// 🏠 英语主站首页 — 铜包钢 (CCS) 站
+import Layout from '../layouts/Layout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Copper Clad Steel Trading',
+  description: 'Premium copper clad steel supplier — grounding rods, busbars, and conductors',
+  url: 'https://copper-clad-steel.com',
+};
+---
+
+<Layout
+  title="Copper Clad Steel — High-Conductivity Bimetallic Solutions"
+  description="Leading supplier of copper clad steel (CCS) for grounding, power transmission, and anti-theft applications. Available in 40%, 55%, and 70% IACS conductivity grades."
+  locale="en"
+  canonicalPath="/"
+  structuredData={structuredData}
+>
+  <section>
+    <h1>Copper Clad Steel Products</h1>
+    <p>Bimetallic excellence — combining copper's conductivity with steel's strength and cost-efficiency.</p>
+    <ul>
+      <li>CCS Grounding Rods — Theft-resistant, corrosion-proof</li>
+      <li>CCS Busbars — Galvanic-corrosion-free power distribution</li>
+      <li>CCS Conductors — 40-70% IACS conductivity grades</li>
+    </ul>
+  </section>
+</Layout>

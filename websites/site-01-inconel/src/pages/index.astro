@@ -1,0 +1,31 @@
+---
+// 🏠 英语主站首页 — Inconel 超级合金站
+import Layout from '../layouts/Layout.astro';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Inconel Alloy Trading',
+  description: 'Premium nickel-based superalloy supplier — Inconel 600, 625, 718, X-750',
+  url: 'https://inconel-alloy.com',
+};
+---
+
+<Layout
+  title="Inconel Alloy — Premium Nickel-Based Superalloys"
+  description="Global supplier of Inconel 600, 625, 718, and X-750. Serving aerospace, oil & gas, and chemical processing industries with certified nickel alloys."
+  locale="en"
+  canonicalPath="/"
+  structuredData={structuredData}
+>
+  <section>
+    <h1>Inconel Nickel-Based Superalloys</h1>
+    <p>Your trusted source for high-performance Inconel alloys since 2010.</p>
+    <ul>
+      <li>Inconel 600 — Oxidation resistant to 1093°C</li>
+      <li>Inconel 625 — Superior fatigue and thermal-fatigue strength</li>
+      <li>Inconel 718 — Precipitation-hardenable for cryogenic to 704°C</li>
+      <li>Inconel X-750 — High creep-rupture strength to 816°C</li>
+    </ul>
+  </section>
+</Layout>
